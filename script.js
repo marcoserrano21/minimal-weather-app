@@ -1,4 +1,4 @@
-const apiKey = '25e4eb518cb9ad425f16a3669d0b4ede'; // Replace with your own OpenWeatherMap API key
+const apiKey = 'MY_API_KEY'; // Replace with your own OpenWeatherMap API key
 
 const input = document.querySelector('input[type="text"]');
 const button = document.querySelector('button');
