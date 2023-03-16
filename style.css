@@ -1,0 +1,143 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;    
+ }
+  
+  .header {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  .input {
+    margin: 1rem 0;
+  }
+  
+  .input input[type="text"] {
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid #ddd;
+    width: 60%;
+    font-size: 1rem;
+  }
+  
+  .input button {
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    border: none;
+    background-color: #4caf50;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 30%;
+  }
+  
+  .input button:hover {
+    background-color: #2e8b57;
+    transform: scale(99%);
+  }
+  
+  .output {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .temperature {
+    margin-top: 1rem;
+  }
+  
+  .temperature h2 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin: 0;
+  }
+  
+  .temperature .city {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .temperature .temp {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .temperature .description {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .toggle {
+    margin-top: 1rem;
+  }
+  
+  .toggle label {
+    margin: 0 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .toggle input[type="radio"] {
+    display: none;
+    margin-right: 10px;
+  }
+  
+  .toggle input[type="radio"] + label:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #4caf50;
+    margin-right: 0.5rem;
+  }
+  
+  .toggle input[type="radio"]:checked + label:before {
+    background-color: #4caf50;
+  }
+  
+  .toggle input[type="radio"]#fahrenheit + label:before {
+    content: "°F";
+  }
+  
+  .toggle input[type="radio"]#celsius + label:before {
+    content: "°C";
+  }
+  
+
+/* Media queries */
+        
+@media (max-width: 768px) {
+    /* Adjust the layout and styles for screens smaller than 768px */
+    .input {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    input[type="text"] {
+        margin-bottom: 10px;
+    }
+    
+    .toggle {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}  
